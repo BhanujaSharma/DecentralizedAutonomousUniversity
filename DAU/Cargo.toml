@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "src/daouniversity_backend",
+    "canisters/daologin"
+]
+resolver = "2"

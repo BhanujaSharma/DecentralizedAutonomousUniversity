@@ -1,0 +1,10 @@
+type Role = variant { Developer;Guest; Student; Professor; Admin };
+service : () -> {
+  assign_role : (principal, Role) -> ();
+  get_deployer_principal : () -> (opt principal) query;
+  list_principals : () -> (vec principal) query;
+  list_users : () -> (vec record { principal; Role }) query;
+  login_as_role : (Role) -> (Role);
+  my_role : () -> (Role) query;
+  whoami : () -> (principal) query;
+}

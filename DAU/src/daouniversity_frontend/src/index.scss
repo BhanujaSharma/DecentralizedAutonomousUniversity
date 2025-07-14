@@ -1,0 +1,253 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 50vw;
+  max-height: 25vw;
+  display: block;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-flow: row wrap;
+  max-width: 40vw;
+  margin: auto;
+  align-items: baseline;
+}
+
+button[type="submit"] {
+  padding: 5px 20px;
+  margin: 10px auto;
+  float: right;
+}
+
+#greeting {
+  margin: 10px auto;
+  padding: 10px 60px;
+  border: 1px solid #222;
+}
+
+#greeting:empty {
+  display: none;
+}
+
+.browser-warning {
+  display: none;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.app {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.auth-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #e9f5ff;
+  border-radius: 8px;
+  border: 1px solid #cce5ff;
+}
+
+.auth-section p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.auth-section strong {
+  color: #0056b3;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.panel {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.panel h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.panel section {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #eee;
+}
+
+.panel section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.role-assignment-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.role-assignment-form input[type="text"],
+.role-assignment-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+  min-width: 200px;
+}
+
+.role-assignment-form button {
+  flex-shrink: 0;
+}
+
+.panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.panel li {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel li strong {
+  font-family: 'monospace', monospace;
+  color: #007bff;
+  word-break: break-all;
+}
+
+.login-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+.login-button {
+  width: 220px;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border-radius: 8px;
+
+  &.admin {
+    background-color: #f44336;
+    &:hover { background-color: #d32f2f; }
+  }
+  &.student {
+    background-color: #4CAF50;
+    &:hover { background-color: #388E3C; }
+  }
+  &.professor {
+    background-color: #2196F3;
+    &:hover { background-color: #1976D2; }
+  }
+}
+
+.auth-section p {
+  strong {
+    color: #007bff;
+  }
+  em {
+    color: #28a745;
+    font-weight: bold;
+  }
+}
+
+.guest-panel {
+  background-color: #e3f2fd;
+  border-left: 5px solid #2196F3;
+  color: #2196F3;
+  p { color: #555; }
+}
+.student-panel {
+  background-color: #e8f5e9;
+  border-left: 5px solid #4CAF50;
+  color: #4CAF50;
+  p { color: #555; }
+}
+.instructor-panel {
+  background-color: #e0f2f7;
+  border-left: 5px solid #03A9F4;
+  color: #03A9F4;
+  p { color: #555; }
+}
+.admin-panel {
+  background-color: #ffebee;
+  border-left: 5px solid #f44336;
+  color: #f44336;
+  p { color: #555; }
+}
+
